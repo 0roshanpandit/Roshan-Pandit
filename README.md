@@ -1,14 +1,17 @@
-# Roshan Pandit — V7
+# Roshan Pandit Portfolio — V7
 
-Premium cosmic portfolio built from scratch.
+A premium dark cosmic portfolio built with plain HTML, CSS and JavaScript.
 
 ## Files
-- `index.html`
-- `style.css`
-- `script.js`
-- `assets/images/hero.png` — transparent hero portrait
+- `index.html` — complete website
+- `style.css` — visual system, cosmic scene and responsive layout
+- `script.js` — stars, cursor, parallax, magnetic hover and scroll reveals
+- `assets/hero.png` — removed-background portrait
 
 ## GitHub Pages
-Upload the complete folder contents to the repository root and enable GitHub Pages.
+1. Upload all files/folders to the repository root.
+2. Make sure `assets/hero.png` is inside the `assets` folder.
+3. Commit changes.
+4. GitHub Pages will serve `index.html`.
 
-The hero image is intentionally the only personal image used. The cosmic environment is generated with CSS/JS: moving stars, orbital rings, planets, glow, clouds and cursor/parallax interactions.
+No external image assets are used besides the hero portrait.

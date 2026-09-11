@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Roshan Pandit — developer, creator and explorer.">
+  <meta name="theme-color" content="#05070b">
   <title>Roshan Pandit — Developer • Creator • Explorer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,14 +11,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="cursor-dot"></div>
-  <div class="cursor-ring"></div>
+  <div id="cursor"><span></span></div>
+  <div class="starfield" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
 
-  <div class="site-stars" aria-hidden="true"></div>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
-
-  <header class="nav">
+  <header class="site-header">
     <a class="brand" href="#home" aria-label="Roshan Pandit home">
       <span class="brand-mark">RP</span>
       <span>ROSHAN PANDIT</span>
@@ -29,152 +26,125 @@
       <a href="#skills">SKILLS</a>
       <a href="#life">LIFE</a>
     </nav>
-    <a class="nav-cta magnetic" href="#contact">LET'S TALK <span>↗</span></a>
+    <a class="header-cta magnetic" href="#contact">LET'S TALK <i>↗</i></a>
   </header>
 
   <main>
     <section class="hero" id="home">
       <div class="hero-grid"></div>
-
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span></span> DEVELOPER <i>•</i> CREATOR <i>•</i> EXPLORER</div>
-        <h1>
-          Ideas that<br>
-          <em>move.</em><br>
-          Experiences<br>
-          that <em>stay.</em>
-        </h1>
-        <p class="hero-lead">
-          I build digital experiences where thoughtful design, code and curiosity
-          come together.
-        </p>
+        <div class="eyebrow"><span></span> DEVELOPER <b>•</b> CREATOR <b>•</b> EXPLORER</div>
+        <h1>Ideas that <em>move.</em><br>Experiences that <em>stay.</em></h1>
+        <p>I build digital experiences where thoughtful design, code and curiosity come together.</p>
         <div class="hero-actions">
-          <a class="button button-primary magnetic" href="#work">VIEW MY WORK <span>↗</span></a>
-          <a class="button button-ghost magnetic" href="#about">MORE ABOUT ME <span>→</span></a>
+          <a class="button button-fill magnetic" href="#work">VIEW MY WORK <span>↗</span></a>
+          <a class="button button-line magnetic" href="#about">MORE ABOUT ME <span>→</span></a>
         </div>
-        <div class="hero-meta">
-          <span>BASED IN INDIA</span><b>•</b><span>WEB / UI / UX / AI</span><b>•</b><span>OPEN TO IDEAS</span>
-        </div>
+        <div class="meta">BASED IN INDIA <b>•</b> WEB / UI / UX / AI <b>•</b> OPEN TO IDEAS</div>
       </div>
 
       <div class="cosmos" aria-hidden="true">
-        <div class="golden-core"></div>
+        <div class="sun-glow"></div>
+        <div class="planet planet-main"></div>
+        <div class="planet planet-small p1"></div>
+        <div class="planet planet-small p2"></div>
+        <div class="planet planet-small p3"></div>
+        <div class="orbit o1"></div>
+        <div class="orbit o2"></div>
+        <div class="orbit o3"></div>
+        <div class="orbit o4"></div>
 
-        <div class="orbit orbit-a"><span class="planet p1"></span></div>
-        <div class="orbit orbit-b"><span class="planet p2"></span></div>
-        <div class="orbit orbit-c"><span class="planet p3"></span></div>
-        <div class="orbit orbit-d"><span class="planet p4"></span></div>
-
-        <div class="back-star star-a"></div>
-        <div class="back-star star-b"></div>
-        <div class="back-star star-c"></div>
-
-        <div class="person-wrap">
-          <div class="person-halo"></div>
-          <img class="hero-person" src="assets/images/hero.png" alt="Roshan Pandit">
+        <div class="subject-wrap" data-depth="0.22">
+          <div class="subject-glow"></div>
+          <img class="subject" src="assets/hero.png" alt="Roshan Pandit">
         </div>
 
-        <div class="cloud cloud-back"></div>
-        <div class="cloud cloud-front cloud-left"></div>
-        <div class="cloud cloud-front cloud-center"></div>
-        <div class="cloud cloud-front cloud-right"></div>
+        <div class="cloud cloud-a"></div>
+        <div class="cloud cloud-b"></div>
+        <div class="cloud cloud-c"></div>
 
-        <div class="info-card card-one">
-          <strong>01</strong><span>BUILDING<br>FOR THE WEB</span>
-        </div>
-        <div class="info-card card-two">
-          <strong>02</strong><span>ALWAYS LEARNING<br>ALWAYS EVOLVING</span>
-        </div>
-        <div class="info-card card-three">
-          <strong>✦</strong><span>TURNING MOMENTS<br>INTO STORIES</span>
-        </div>
+        <div class="orbit-label label-one"><b>01</b><span>BUILDING<br>FOR THE WEB</span></div>
+        <div class="orbit-label label-two"><b>02</b><span>ALWAYS LEARNING<br>ALWAYS EVOLVING</span></div>
+        <div class="orbit-label label-three"><b>✦</b><span>TURNING MOMENTS<br>INTO STORIES</span></div>
       </div>
 
       <a class="scroll-cue" href="#about"><span>↓</span> SCROLL TO EXPLORE</a>
     </section>
 
     <section class="section about" id="about">
-      <div class="section-label">01 / ABOUT</div>
-      <div class="section-heading">
+      <div class="section-head reveal">
+        <div class="eyebrow">01 / ABOUT</div>
         <h2>Curious by<br><em>default.</em></h2>
-        <p>I like building things, trying new ideas and turning random experiments into something people can actually use.</p>
       </div>
-      <div class="about-grid">
-        <article class="feature-panel">
-          <span class="panel-number">01</span>
-          <h3>Think.<br>Build.<br>Explore.</h3>
-          <p>From small web experiments to bigger ideas, I enjoy the complete journey — concept, design, code and launch.</p>
-        </article>
-        <article class="quote-panel">
-          <span>✦</span>
-          <p>Technology is a playground. I keep learning, testing and combining tools to make useful things.</p>
-          <small>CREATOR / 2026</small>
-        </article>
+      <div class="about-content reveal">
+        <p class="lead">I like building things, trying new ideas and turning random experiments into something people can actually use.</p>
+        <div class="about-lines">
+          <div><strong>01</strong><span>THINK.<br>BUILD.<br>EXPLORE.</span></div>
+          <div><strong>02</strong><span>From small web experiments to bigger ideas, I enjoy the complete journey — concept, design, code and launch.</span></div>
+        </div>
       </div>
     </section>
 
     <section class="section work" id="work">
-      <div class="section-label">02 / SELECTED WORK</div>
-      <div class="section-heading">
+      <div class="section-head reveal">
+        <div class="eyebrow">02 / SELECTED WORK</div>
         <h2>Things I've<br><em>built.</em></h2>
-        <p>A collection of experiments, websites and digital projects I've worked on.</p>
       </div>
+      <p class="section-intro reveal">A collection of experiments, websites and digital projects I've worked on.</p>
       <div class="work-grid">
-        <a class="work-card magnetic" href="https://0roshanpandit.github.io/tictactoe-pwa/" target="_blank" rel="noopener">
-          <span class="card-index">01</span>
-          <div class="card-icon tic">× ○ ×<br>○ × ○<br>× ○ ×</div>
+        <a class="work-card reveal magnetic" href="#" onclick="return false;">
+          <span class="card-no">01</span>
+          <div class="card-icon tic">× ○<br>○ ×</div>
           <h3>Tic Tac Toe PWA</h3>
           <p>A lightweight web app with responsive UI, PWA support and interactive gameplay.</p>
           <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span><span>PWA</span></div>
         </a>
-        <article class="work-card magnetic">
-          <span class="card-index">02</span>
+        <a class="work-card reveal magnetic" href="#" onclick="return false;">
+          <span class="card-no">02</span>
           <div class="card-icon code">&lt; / &gt;</div>
           <h3>AI Experiments</h3>
           <p>Experiments exploring AI, automation and useful digital workflows.</p>
           <div class="tags"><span>AI</span><span>AUTOMATION</span><span>TOOLS</span></div>
-        </article>
-        <article class="work-card magnetic">
-          <span class="card-index">03</span>
-          <div class="card-icon spark">✦</div>
+        </a>
+        <a class="work-card reveal magnetic" href="#" onclick="return false;">
+          <span class="card-no">03</span>
+          <div class="card-icon star">✦</div>
           <h3>Creative Lab</h3>
           <p>Creative experiments involving 3D, design and digital experiences.</p>
-          <div class="tags"><span>3D</span><span>DESIGN</span><span>CREATE</span></div>
-        </article>
+          <div class="tags"><span>3D</span><span>DESIGN</span><span>CREATIVE</span></div>
+        </a>
       </div>
     </section>
 
     <section class="section skills" id="skills">
-      <div class="section-label">03 / SKILLS</div>
-      <div class="section-heading">
+      <div class="section-head reveal">
+        <div class="eyebrow">03 / SKILLS</div>
         <h2>Tools for<br><em>building.</em></h2>
-        <p>Technology is a playground. I keep learning, testing and combining tools to make useful things.</p>
       </div>
+      <p class="section-intro reveal">Technology is a playground. I keep learning, testing and combining tools to make useful things.</p>
       <div class="skill-list">
-        <div><b>01</b><strong>WEB DEVELOPMENT</strong><span>HTML · CSS · JAVASCRIPT · PWA</span></div>
-        <div><b>02</b><strong>UI / UX</strong><span>LAYOUT · INTERACTION · VISUAL DESIGN</span></div>
-        <div><b>03</b><strong>AI & AUTOMATION</strong><span>AI TOOLS · WORKFLOWS · EXPERIMENTS</span></div>
-        <div><b>04</b><strong>CREATIVE TECHNOLOGY</strong><span>3D · IMAGE · DIGITAL EXPERIENCES</span></div>
+        <div class="skill-row reveal"><span>01</span><h3>WEB DEVELOPMENT</h3><p>HTML · CSS · JAVASCRIPT · PWA</p></div>
+        <div class="skill-row reveal"><span>02</span><h3>UI / UX</h3><p>LAYOUT · INTERACTION · VISUAL DESIGN</p></div>
+        <div class="skill-row reveal"><span>03</span><h3>AI & AUTOMATION</h3><p>AI TOOLS · WORKFLOWS · EXPERIMENTS</p></div>
+        <div class="skill-row reveal"><span>04</span><h3>CREATIVE TECHNOLOGY</h3><p>3D · IMAGE · DIGITAL EXPERIENCES</p></div>
       </div>
     </section>
 
     <section class="section life" id="life">
-      <div class="section-label">04 / LIFE</div>
-      <div class="life-panel">
-        <div>
-          <h2>Always<br><em>exploring.</em></h2>
-          <p>I enjoy experimenting, learning new things, creating digital experiences and turning ideas into something real.</p>
-        </div>
-        <div class="life-orbit" aria-hidden="true"><span></span><i></i></div>
+      <div class="life-card reveal">
+        <div class="eyebrow">04 / LIFE</div>
+        <h2>Always<br><em>exploring.</em></h2>
+        <p>I enjoy experimenting, learning new things, creating digital experiences and turning ideas into something real.</p>
+        <div class="life-orbit"><i></i><span>CURIOUS / 2026</span></div>
       </div>
     </section>
 
     <section class="section contact" id="contact">
-      <div class="contact-panel">
-        <div class="section-label">05 / CONTACT</div>
+      <div class="contact-card reveal">
+        <div class="eyebrow">05 / CONTACT</div>
         <h2>Let's make<br>something<br><em>interesting.</em></h2>
         <p>Have a project, experiment or simply an idea you want to discuss?</p>
-        <a class="button button-primary magnetic" href="mailto:hello@roshanpandit.com">START A CONVERSATION <span>↗</span></a>
+        <a class="button button-fill magnetic" href="mailto:hello@roshanpandit.dev">START A CONVERSATION <span>↗</span></a>
       </div>
     </section>
   </main>
